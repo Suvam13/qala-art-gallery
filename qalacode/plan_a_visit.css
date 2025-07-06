@@ -1,0 +1,255 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background: #f8f5e9;
+    color: #030200;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.hours-location,
+.tickets-admission {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    background: #f8f5e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 64px 0 64px 0;
+    border-bottom: none;
+    gap: 48px;
+}
+
+.hours-info {
+    flex: 1 1 340px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.hours-info h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hours-info p,
+.hours-info address {
+    font-size: 17.28px;
+    margin: 8px 0;
+    font-family: 'Georgia', serif;
+}
+
+.location-map {
+    flex: 0 0 320px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.location-map img {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tickets-admission {
+    width: 100vw;
+    background: #f3e6d7;
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.tickets-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.ticket-image {
+    flex: 0 0 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding: 0 150px 0 0px;
+}
+
+.ticket-image img {
+    width: 320px;
+    height: auto;
+    display: block;
+}
+
+.admission-info {
+    flex: 0 0 350px;
+    text-align: left;
+    padding: 0 0px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admission-info h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.ticket-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 19.2px 0;
+}
+
+.ticket-list li {
+    font-size: 17.28px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8px;
+    font-family: 'Georgia', serif;
+}
+
+.ticket-list span {
+    font-weight: bold;
+    color: #a13c2f;
+}
+
+.advance-booking {
+    font-size: 15.68px;
+    color: #030200;
+    margin-top: 11.2px;
+}
+.know-before {
+    width: 100%;
+    margin-left: 0;
+    transform: none;
+    background: #f8f5e9;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 64px 0 64px 0;
+    border-bottom: none;
+    gap: 48px;}
+.know-before h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 32px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.know-columns {
+    display: flex;
+    gap: 64px;
+    padding: 0 80px;
+}
+
+.etiquettes,
+.visitor-tips {
+    flex: 1 1 0;
+    background: none;
+    text-align: left;
+}
+
+.etiquettes h3,
+.visitor-tips h3 {
+    font-size: 20px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.etiquettes ol,
+.visitor-tips ol {
+    font-size: 16.8px;
+    padding-left: 19.2px;
+    margin: 0;
+    color: #030200;
+    font-family: 'Georgia', serif;
+}
+
+.etiquettes li,
+.visitor-tips li {
+    margin-bottom: 11.2px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+    .tickets-admission {
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .tickets-admission {
+        flex-direction: column;
+        gap: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ticket-image img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 19.2px 1.2vw 0 1.2vw;
+    }
+
+    .hours-location,
+    .tickets-admission,
+    .know-before {
+        padding: 19.2px 0 19.2px 0;
+    }
+
+    .location-map img {
+        width: 100%;
+        max-width: 100%;
+        height: 120px;
+    }
+
+    .ticket-image img {
+        width: 120px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 19.2px;
+    }
+}
